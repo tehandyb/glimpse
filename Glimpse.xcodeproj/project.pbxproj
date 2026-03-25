@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		161C100A3C1AE2FA957B9B8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB544821148F64E0375D3E8 /* ContentView.swift */; };
+		697EE7BF8BE38934A6B7D98D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D4856A0885CB61DC0412D7 /* SettingsView.swift */; };
+		6D9F2FFD60D191CE91FDF379 /* GlimpseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BA601EB7F2FE3B5915D6D8 /* GlimpseApp.swift */; };
+		6E80E91B2D422D29E779FB9B /* GlassesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B7112BC818F9AD8394A85A /* GlassesManager.swift */; };
+		781A26CB0984CFBCA8EC0C3B /* WearablesKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9AFA1F492A9FDD022F2A422F /* WearablesKit */; };
+		78B4FB29315AE83D2A028B28 /* GlassesFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B4227C25726030DBBD756C /* GlassesFrame.swift */; };
+		8A686CE4868F8DC0EA0666A0 /* ClaudeMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188A95C790AEB90AACAA70C /* ClaudeMessage.swift */; };
+		9598B8E596C1BFD17BD2446A /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53BCC6E3AA8C1117EDCFC6 /* Speaker.swift */; };
+		AE827B91FA7D607E0E16BA23 /* GlimpseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5387F4DBCFCED6D43CCCB8CC /* GlimpseViewModel.swift */; };
+		BCA7D27AF816AEE4D7DA22F9 /* ClaudeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84C63AB26BA274FF2CB595A /* ClaudeClient.swift */; };
+		DB63E7BE8315BC307BB1406C /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48E280DC7DB31898B7BA6DA /* SpeechRecognizer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2FB544821148F64E0375D3E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		34D4856A0885CB61DC0412D7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		52F88194E12EFD0B039AEC47 /* Glimpse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Glimpse.entitlements; sourceTree = "<group>"; };
+		5387F4DBCFCED6D43CCCB8CC /* GlimpseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlimpseViewModel.swift; sourceTree = "<group>"; };
+		86B4227C25726030DBBD756C /* GlassesFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassesFrame.swift; sourceTree = "<group>"; };
+		94B7112BC818F9AD8394A85A /* GlassesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassesManager.swift; sourceTree = "<group>"; };
+		A03B0EB93B824CDF53140129 /* Glimpse.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Glimpse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A188A95C790AEB90AACAA70C /* ClaudeMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeMessage.swift; sourceTree = "<group>"; };
+		C7BA601EB7F2FE3B5915D6D8 /* GlimpseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlimpseApp.swift; sourceTree = "<group>"; };
+		C84C63AB26BA274FF2CB595A /* ClaudeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeClient.swift; sourceTree = "<group>"; };
+		D48E280DC7DB31898B7BA6DA /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		FB53BCC6E3AA8C1117EDCFC6 /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87F60F5F10DDFFCD9E7FA4F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				781A26CB0984CFBCA8EC0C3B /* WearablesKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		002DFCD17B698E29E2AC540A = {
+			isa = PBXGroup;
+			children = (
+				BECD970D33058C92CDB1F928 /* Glimpse */,
+				0055B6F94C11F5337B90071C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0055B6F94C11F5337B90071C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A03B0EB93B824CDF53140129 /* Glimpse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03D2A0AA2046E4811356D9AB /* Claude */ = {
+			isa = PBXGroup;
+			children = (
+				C84C63AB26BA274FF2CB595A /* ClaudeClient.swift */,
+				A188A95C790AEB90AACAA70C /* ClaudeMessage.swift */,
+			);
+			path = Claude;
+			sourceTree = "<group>";
+		};
+		40D8E3AC28BE9BC8760A5FB2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2FB544821148F64E0375D3E8 /* ContentView.swift */,
+				C7BA601EB7F2FE3B5915D6D8 /* GlimpseApp.swift */,
+				5387F4DBCFCED6D43CCCB8CC /* GlimpseViewModel.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		867C100F493DC644647D73D6 /* Glasses */ = {
+			isa = PBXGroup;
+			children = (
+				86B4227C25726030DBBD756C /* GlassesFrame.swift */,
+				94B7112BC818F9AD8394A85A /* GlassesManager.swift */,
+			);
+			path = Glasses;
+			sourceTree = "<group>";
+		};
+		96B180B525A06F254686157D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				34D4856A0885CB61DC0412D7 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		BECD970D33058C92CDB1F928 /* Glimpse */ = {
+			isa = PBXGroup;
+			children = (
+				52F88194E12EFD0B039AEC47 /* Glimpse.entitlements */,
+				40D8E3AC28BE9BC8760A5FB2 /* App */,
+				EFBC208B2EC3EED64C0F8F66 /* Audio */,
+				03D2A0AA2046E4811356D9AB /* Claude */,
+				867C100F493DC644647D73D6 /* Glasses */,
+				96B180B525A06F254686157D /* Settings */,
+			);
+			path = Glimpse;
+			sourceTree = "<group>";
+		};
+		EFBC208B2EC3EED64C0F8F66 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				FB53BCC6E3AA8C1117EDCFC6 /* Speaker.swift */,
+				D48E280DC7DB31898B7BA6DA /* SpeechRecognizer.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E50A4D309DE8D0EE18E1BD4C /* Glimpse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 694333204AFDD74751872335 /* Build configuration list for PBXNativeTarget "Glimpse" */;
+			buildPhases = (
+				197AC9541B24B5C244381F7B /* Sources */,
+				87F60F5F10DDFFCD9E7FA4F6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Glimpse;
+			packageProductDependencies = (
+				9AFA1F492A9FDD022F2A422F /* WearablesKit */,
+			);
+			productName = Glimpse;
+			productReference = A03B0EB93B824CDF53140129 /* Glimpse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BF4E50A0B876C48BAE690C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 361EB84927C9029F56668F33 /* Build configuration list for PBXProject "Glimpse" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 002DFCD17B698E29E2AC540A;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				54F313E3D04359F55A7F1A60 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0055B6F94C11F5337B90071C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E50A4D309DE8D0EE18E1BD4C /* Glimpse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		197AC9541B24B5C244381F7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA7D27AF816AEE4D7DA22F9 /* ClaudeClient.swift in Sources */,
+				8A686CE4868F8DC0EA0666A0 /* ClaudeMessage.swift in Sources */,
+				161C100A3C1AE2FA957B9B8A /* ContentView.swift in Sources */,
+				78B4FB29315AE83D2A028B28 /* GlassesFrame.swift in Sources */,
+				6E80E91B2D422D29E779FB9B /* GlassesManager.swift in Sources */,
+				6D9F2FFD60D191CE91FDF379 /* GlimpseApp.swift in Sources */,
+				AE827B91FA7D607E0E16BA23 /* GlimpseViewModel.swift in Sources */,
+				697EE7BF8BE38934A6B7D98D /* SettingsView.swift in Sources */,
+				9598B8E596C1BFD17BD2446A /* Speaker.swift in Sources */,
+				DB63E7BE8315BC307BB1406C /* SpeechRecognizer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3FCC4B6749E81AA2B8DCE3A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6B7F5F2CC78694F2BA43F8C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Glimpse/Glimpse.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Glimpse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.glimpse.app;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		817640F994367FBCDC6A0F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Glimpse/Glimpse.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Glimpse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.glimpse.app;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8936D8711056881237ED5378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		361EB84927C9029F56668F33 /* Build configuration list for PBXProject "Glimpse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8936D8711056881237ED5378 /* Debug */,
+				3FCC4B6749E81AA2B8DCE3A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		694333204AFDD74751872335 /* Build configuration list for PBXNativeTarget "Glimpse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B7F5F2CC78694F2BA43F8C8 /* Debug */,
+				817640F994367FBCDC6A0F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		54F313E3D04359F55A7F1A60 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/meta-wearables-dat-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9AFA1F492A9FDD022F2A422F /* WearablesKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54F313E3D04359F55A7F1A60 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */;
+			productName = WearablesKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9BF4E50A0B876C48BAE690C5 /* Project object */;
+}

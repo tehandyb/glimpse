@@ -1,0 +1,52 @@
+name: Glimpse
+options:
+  bundleIdPrefix: co.glimpse
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "16.0"
+  createIntermediateGroups: true
+
+packages:
+  meta-wearables-dat-ios:
+    url: https://github.com/facebook/meta-wearables-dat-ios
+    from: 0.1.0
+
+targets:
+  Glimpse:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: Glimpse
+        excludes:
+          - "**/*.plist"
+    resources:
+      - path: Glimpse/Info.plist
+    info:
+      path: Glimpse/Info.plist
+      properties:
+        NSMicrophoneUsageDescription: "Glimpse uses the microphone to hear your voice commands through your glasses."
+        NSSpeechRecognitionUsageDescription: "Glimpse converts your speech to text to send to Claude."
+        NSBluetoothAlwaysUsageDescription: "Glimpse connects to your Meta Ray-Ban glasses via Bluetooth."
+        UIBackgroundModes:
+          - audio
+        MetaWearablesAppID: "YOUR_META_APP_ID_HERE"
+        CFBundleName: Glimpse
+        CFBundleDisplayName: Glimpse
+        CFBundleIdentifier: "$(PRODUCT_BUNDLE_IDENTIFIER)"
+        CFBundleVersion: "1"
+        CFBundleShortVersionString: "0.1"
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: co.glimpse.app
+        SWIFT_VERSION: "5.9"
+        ENABLE_PREVIEWS: YES
+    dependencies:
+      - package: meta-wearables-dat-ios
+        product: WearablesKit
+    entitlements:
+      path: Glimpse/Glimpse.entitlements
+      properties:
+        com.apple.developer.bluetooth: true
