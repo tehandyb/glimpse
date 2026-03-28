@@ -30,7 +30,8 @@ targets:
         NSBluetoothAlwaysUsageDescription: "Glimpse connects to your Meta Ray-Ban glasses via Bluetooth."
         UIBackgroundModes:
           - audio
-        MetaWearablesAppID: "YOUR_META_APP_ID_HERE"
+        MetaAppID: "$(META_APP_ID)"
+        ClientToken: "$(META_CLIENT_TOKEN)"
         CFBundleName: Glimpse
         CFBundleDisplayName: Glimpse
         CFBundleIdentifier: "$(PRODUCT_BUNDLE_IDENTIFIER)"
@@ -43,6 +44,11 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: co.glimpse.app
         SWIFT_VERSION: "5.9"
         ENABLE_PREVIEWS: YES
+      configs:
+        Debug:
+          XCCONFIG: Secrets.xcconfig
+        Release:
+          XCCONFIG: Secrets.xcconfig
     dependencies:
       - package: meta-wearables-dat-ios
         product: WearablesKit

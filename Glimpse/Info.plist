@@ -21,9 +21,9 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>MetaAppID</key>
-	<string>3036865443170313</string>
+	<string>$(META_APP_ID)</string>
 	<key>ClientToken</key>
-	<string>AR|3036865443170313|bc5aa7d3e04aebf16e29fed6aff42388</string>
+	<string>$(META_CLIENT_TOKEN)</string>
 	<key>NSBluetoothAlwaysUsageDescription</key>
 	<string>Glimpse connects to your Meta Ray-Ban glasses via Bluetooth.</string>
 	<key>NSMicrophoneUsageDescription</key>
