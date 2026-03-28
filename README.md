@@ -15,11 +15,24 @@ Speak naturally. Claude sees what you see (camera frame) and hears what you say.
 - Anthropic API key
 - Meta developer account (register at developers.meta.com/wearables)
 
-### 1. Register with Meta
+### 1. Bootstrap
 
-Go to https://developers.meta.com/wearables/ and create an app. You'll get a **Meta App ID** — paste it into `Glimpse/Info.plist` under `MetaWearablesAppID`.
+```bash
+bash bootstrap.sh
+```
 
-### 2. Open in Xcode
+This creates `Secrets.xcconfig` from the example template and regenerates `Glimpse.xcodeproj`. Requires [xcodegen](https://github.com/yonaskolb/XcodeGen) (installed automatically via Homebrew if missing).
+
+### 2. Add your Meta credentials
+
+Go to https://developers.meta.com/wearables/ and create an app. You'll get a **Meta App ID** and **client token** — paste them into `Secrets.xcconfig`:
+
+```
+META_APP_ID = <your app id>
+META_CLIENT_TOKEN = <your client token>
+```
+
+### 3. Open in Xcode
 
 ```bash
 open Glimpse.xcodeproj
@@ -27,11 +40,11 @@ open Glimpse.xcodeproj
 
 The Meta Wearables DAT SDK is pulled via Swift Package Manager from `https://github.com/facebook/meta-wearables-dat-ios`.
 
-### 3. Add your Anthropic API key
+### 4. Add your Anthropic API key
 
 Run the app → tap the gear icon → enter your `sk-ant-...` key.
 
-### 4. Enable capabilities in Xcode
+### 5. Enable capabilities in Xcode
 
 In the target settings → Signing & Capabilities, add:
 - Background Modes → Audio, AirPlay, and Picture in Picture
